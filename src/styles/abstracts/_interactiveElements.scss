@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as vars;
+// @use '../base/typography' as typo;
+@use '../abstracts/functions' as func;
+
+
+
+/********* Buttons ***************/
+
+.btn-primary-l {
+    max-width: func.px-to-rem(255);
+    height: func.px-to-rem(48);
+    background: vars.$purple-primary;
+    border-radius: func.px-to-rem(24);
+    color: vars.$white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.btn-primary-l:hover {
+    background: $purple-secondary;
+}
+
+
+
+.btn-primary-s {
+    max-width: func.px-to-rem(255);
+    height: func.px-to-rem(40);
+    background: vars.$purple-primary;
+    border-radius: func.px-to-rem(20);
+    color: vars.$white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.btn-primary-s:hover {
+    background: $purple-secondary;
+}
+
+
+
+.btn-secondary {
+    max-width: func.px-to-rem(255);
+    height: func.px-to-rem(40);
+    background: $btn-bg;
+    color: vars.$purple-primary;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.btn-secondary:hover {
+    background: $hover-btn-bg;
+}
+
+
+
+.btn-destructive {
+    max-width: func.px-to-rem(255);
+    height: func.px-to-rem(40);
+    background: $red-primary;
+    border-radius: func.px-to-rem(20);
+    color: vars.$white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+.btn-destructive:hover {
+    background: $red-secondary;
+}
+
+
+
+/*********** Inputs **********/
+
+.text-field-idle {
+    max-width: func.px-to-rem(350);
+    height: func.px-to-rem(40);
+    border: 1px solid $grey-01;
+    outline: none;
+    border-radius: func.px-to-rem(4);
+    font-weight: medium;
+    padding-left: func.px-to-rem(16);
+}
+.text-field-idle::placeholder {
+    color: $grey-01;
+}
+
+
+/********* Drop Down  *********/
+
+
+
+
+
+/********* checkbox **********/

@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/functions' as func;
+
+$font-stack: "Plus Jakarta Sans", sans-serif;
+
+body {
+    font-family: $font-stack;
+    width: 100vw;
+    height: 100vh;
+}
+
+/********* Typography ***********/
+
+.heading-xl {
+    font-size: func.px-to-rem(24);
+    line-height: func.px-to-rem(30);
+    font-weight: 900;
+}
+
+.heading-l {
+    font-size: func.px-to-rem(18);
+    line-height: func.px-to-rem(23);
+    font-weight: 900;
+}
+
+.heading-m {
+    font-size: func.px-to-rem(15);
+    line-height: func.px-to-rem(19);
+    font-weight: 900;
+}
+
+.heading-s {
+    font-size: func.px-to-rem(12);
+    line-height: func.px-to-rem(15);
+    font-weight: 900;
+    color: vars.$grey-01;
+}
+
+.body-l {
+    font-size: func.px-to-rem(13);
+    line-height: func.px-to-rem(23);
+    font-weight: 500;
+}
+
+.body-m {
+    font-size: func.px-to-rem(12);
+    line-height: func.px-to-rem(15);
+    font-weight: 900;
+}
