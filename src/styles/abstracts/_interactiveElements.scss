@@ -8,13 +8,17 @@
 
 .btn-primary-l {
     max-width: func.px-to-rem(255);
-    height: func.px-to-rem(48);
+    // height: func.px-to-rem(48);
     background: vars.$purple-primary;
     border-radius: func.px-to-rem(24);
     color: vars.$white;
     font-weight: 700;
     border: none;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 .btn-primary-l:hover {
     background: vars.$purple-secondary;

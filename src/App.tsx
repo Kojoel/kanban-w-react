@@ -1,6 +1,7 @@
-import BoardContent from "./components/constant/BoardContent"
-import Header from "./components/constant/Header"
-import Sidebar from "./components/constant/Sidebar"
+import BoardContent from "./components/constant/BoardContent";
+import Header from "./components/constant/Header";
+import Sidebar from "./components/constant/SideBar";
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <div className="flex">
         <Sidebar />
-        <div>
+        <div className="flex-1 flex flex-col">
           <Header />
           <BoardContent />
         </div>
