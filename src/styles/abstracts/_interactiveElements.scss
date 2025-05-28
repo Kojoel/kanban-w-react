@@ -17,7 +17,7 @@
     outline: none;
 }
 .btn-primary-l:hover {
-    background: $purple-secondary;
+    background: vars.$purple-secondary;
 }
 
 
@@ -33,7 +33,7 @@
     outline: none;
 }
 .btn-primary-s:hover {
-    background: $purple-secondary;
+    background: vars.$purple-secondary;
 }
 
 
@@ -41,14 +41,14 @@
 .btn-secondary {
     max-width: func.px-to-rem(255);
     height: func.px-to-rem(40);
-    background: $btn-bg;
+    background: vars.$btn-bg;
     color: vars.$purple-primary;
     font-weight: 700;
     border: none;
     outline: none;
 }
 .btn-secondary:hover {
-    background: $hover-btn-bg;
+    background: vars.$hover-btn-bg;
 }
 
 
@@ -56,7 +56,7 @@
 .btn-destructive {
     max-width: func.px-to-rem(255);
     height: func.px-to-rem(40);
-    background: $red-primary;
+    background: vars.$red-primary;
     border-radius: func.px-to-rem(20);
     color: vars.$white;
     font-weight: 700;
@@ -64,7 +64,7 @@
     outline: none;
 }
 .btn-destructive:hover {
-    background: $red-secondary;
+    background: vars.$red-secondary;
 }
 
 
@@ -74,14 +74,14 @@
 .text-field-idle {
     max-width: func.px-to-rem(350);
     height: func.px-to-rem(40);
-    border: 1px solid $grey-01;
+    border: 1px solid vars.$grey-01;
     outline: none;
     border-radius: func.px-to-rem(4);
     font-weight: medium;
     padding-left: func.px-to-rem(16);
 }
 .text-field-idle::placeholder {
-    color: $grey-01;
+    color: vars.$grey-01;
 }
 
 
@@ -92,3 +92,18 @@
 
 
 /********* checkbox **********/
+
+
+
+
+
+
+
+
+
+
+.create-board-svg-light {
+    path {
+        fill: vars.$grey-01;
+    }
+}
