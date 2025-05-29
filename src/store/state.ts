@@ -7,6 +7,9 @@ interface BoardState {
     
     activeBoard: string;
     setActiveBoard: (board: string) => void;
+
+    boardContent: Column[];
+    setBoardContent: (activeBoard: Column[]) => void;
 }
 
 export const useBoardStore = create<BoardState>((set) => ({
@@ -15,4 +18,7 @@ export const useBoardStore = create<BoardState>((set) => ({
     
     activeBoard: '',
     setActiveBoard: (board: string) => set({ activeBoard: board }),
+
+    boardContent: [],
+    setBoardContent: (activeBoard: Column[]) => set({ boardContent: activeBoard })
 }))
