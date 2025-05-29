@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import BoardContent from "./components/constant/BoardContent";
 import Header from "./components/constant/Header";
 import Sidebar from "./components/constant/SideBar";
+import { getData } from "./kanban services/apiService";
 
 
 function App() {
+
+  useEffect(() => {
+    getData();
+  })
 
   return (
     <>
