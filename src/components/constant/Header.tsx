@@ -1,9 +1,12 @@
+import { useBoardStore } from '../../store/state';
 import '../../styles/abstracts/_interactiveElements.scss';
 
 const Header = () => {
+  const activeBoard = useBoardStore((state) => state.activeBoard);
+
   return (
     <div className="flex items-center justify-between pl-[32px] pr-[32px] h-[96px] border-b border-b-[var(--grey-02)]">
-      <p className="hidden md:block heading-xl ">Platform Launch</p>
+      <p className="hidden md:block heading-xl">{activeBoard}</p>
       <select className="block md:hidden heading-xl" name="boards" id="boards">
         <option value="platform launch ">Platform Launch</option>
       </select>
