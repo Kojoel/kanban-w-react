@@ -111,3 +111,52 @@
         fill: vars.$grey-01;
     }
 }
+
+
+
+.active-board {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: func.px-to-rem(15);
+    cursor: pointer;
+    background: vars.$purple-primary;
+    border-radius: 0 99px 99px 0;
+    transition: .2s ease;
+
+    svg {
+        width: px-to-rem(16);
+        height: px-to-rem(16);
+
+        path {
+            fill: vars.$white;
+        }
+    }
+
+    span {
+        color: white;
+    }
+}
+
+.inactive-board {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: func.px-to-rem(15);
+    cursor: pointer;
+    background: transparent;
+    transition: .2s ease;
+
+    svg {
+        width: px-to-rem(16);
+        height: px-to-rem(16);
+
+        path {
+            fill: vars.$grey-01;
+        }
+    }
+
+    span {
+        color: vars.$grey-01;
+    }
+}
