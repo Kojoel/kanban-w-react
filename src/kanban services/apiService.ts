@@ -3,12 +3,13 @@ const dataUrl = 'assets/data.json';
 
 export const getData = async () => {
     try {
-        const data = await fetch(dataUrl);
-        const response = await data.json();
+        const response = await fetch(dataUrl);
+        const data = await response.json();
+        return data.boards;
 
-        console.log(response);
     } catch (err) {
-        // console.error(err)
+        console.error('Failed to fetch datat', err);
+        return [];
     }
 }
 
