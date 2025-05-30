@@ -16,8 +16,9 @@ const Header = () => {
       <select className="block md:hidden heading-xl" name="boards" id="boards">
         <option value="platform launch ">Platform Launch</option>
       </select>
-      <div className="flex items-center gap-[24px]">
-        <button className="w-[46px] h-[32px] md:h-[48px] right btn-primary-l w-[46px] text-[.9rem] md:w-[164px] relative">
+      <div className={`flex items-center gap-[24px]`}>
+        <button 
+          className={`w-[46px] h-[32px] md:h-[48px] right btn-primary-l w-[46px] text-[.9rem] md:w-[164px] relative ${boardContent.length ? '' : 'disable-btn'}`}>
           <p className="text-[1.6rem] absolute bottom-[0.5px] md:bottom-0 md:text-[1rem] md:static">+</p>
           <p className="hidden md:block">Add New Task</p>
         </button>

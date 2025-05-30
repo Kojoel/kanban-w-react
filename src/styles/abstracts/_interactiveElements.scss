@@ -160,3 +160,10 @@
         color: vars.$grey-01;
     }
 }
+
+
+
+.disable-btn {
+    background: vars.$purple-secondary;
+    pointer-events: none;
+}
