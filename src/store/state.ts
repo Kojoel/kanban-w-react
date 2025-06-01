@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Board, Column } from '../interfaces/board';
+import type { Board, Column, Task } from '../interfaces/board';
 
 interface BoardState {
     boards: Board[];
@@ -10,6 +10,12 @@ interface BoardState {
 
     boardContent: Column[];
     setBoardContent: (activeBoard: Column[]) => void;
+
+    task: Task;
+    setTask: (task: Task) => void; 
+
+    subtaskModal: boolean;
+    setSubtaskModal: (value: boolean) => void;
 }
 
 export const useBoardStore = create<BoardState>((set) => ({
@@ -20,5 +26,16 @@ export const useBoardStore = create<BoardState>((set) => ({
     setActiveBoard: (board: string) => set({ activeBoard: board }),
 
     boardContent: [],
-    setBoardContent: (activeBoard: Column[]) => set({ boardContent: activeBoard })
+    setBoardContent: (activeBoard: Column[]) => set({ boardContent: activeBoard }),
+
+    task: {
+        title: '',
+        description: '',
+        status: '',
+        subtasks: [],
+    },
+    setTask: (task) => set({ task }),
+
+    subtaskModal: false,
+    setSubtaskModal: (value) => set({ subtaskModal: value }) 
 }))

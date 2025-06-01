@@ -6,10 +6,6 @@ const Header = () => {
   const activeBoard = useBoardStore((state) => state.activeBoard);
   const boardContent = useBoardStore((state) => state.boardContent);
 
-  useEffect(() => {
-    console.log("content: ", boardContent);
-  }, [activeBoard])
-
   return (
     <div className="flex items-center justify-between pl-[32px] pr-[32px] h-[96px] border-b border-b-[var(--grey-02)]">
       <p className="hidden md:block heading-xl">{activeBoard}</p>

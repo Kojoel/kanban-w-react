@@ -7,7 +7,7 @@
 /********* Buttons ***************/
 
 .btn-primary-l {
-    max-width: func.px-to-rem(255);
+    // max-width: func.px-to-rem(255);
     // height: func.px-to-rem(48);
     background: vars.$purple-primary;
     border-radius: func.px-to-rem(24);
@@ -43,13 +43,14 @@
 
 
 .btn-secondary {
-    max-width: func.px-to-rem(255);
+    // max-width: func.px-to-rem(255);
     height: func.px-to-rem(40);
     background: vars.$btn-bg;
     color: vars.$purple-primary;
     font-weight: 700;
     border: none;
     outline: none;
+    border-radius: 90px;
 }
 .btn-secondary:hover {
     background: vars.$hover-btn-bg;
@@ -76,9 +77,8 @@
 /*********** Inputs **********/
 
 .text-field-idle {
-    max-width: func.px-to-rem(350);
-    height: func.px-to-rem(40);
-    border: 1px solid vars.$grey-01;
+    // height: func.px-to-rem(40);
+    border: 1px solid vars.$grey-02;
     outline: none;
     border-radius: func.px-to-rem(4);
     font-weight: medium;
@@ -166,4 +166,16 @@
 .disable-btn {
     background: vars.$purple-secondary;
     pointer-events: none;
+}
+
+
+
+
+/************ Modals *************/
+.hideModal {
+    display: hidden;
+}
+
+.showModal {
+    display: flex;
 }
